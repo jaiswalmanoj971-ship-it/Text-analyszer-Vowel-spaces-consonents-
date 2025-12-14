@@ -1,0 +1,40 @@
+ #include <iostream>
+#include <cstring>
+using namespace std;
+int main (){
+
+  char word[100];
+  int vowel=0;
+  int spaces=0;
+  int consonent=0; 
+  cout<<strlen(word)<<endl;
+  cout<<"Write a word , line and any sentence which you want to find how many vowels and consonent are present :";
+  cin.getline (word,100);
+
+   for(int i=0;word[i]!='\0';i++){
+    if(word[i]=='a' || word[i]=='e' || word[i]=='i' || word[i]=='o' || word[i]=='u'){
+      vowel++;
+    }
+    else if(word[i]==' '){
+      
+      spaces++;
+
+    }
+    else{
+
+      consonent++;
+    }
+
+
+  }
+  cout<<"There are total vowel:"<<vowel<<endl;
+  cout<<"There are total consonent:"<<consonent<<endl;
+  cout<<"There are total spaces :"<<spaces<<endl; 
+
+
+
+
+
+
+  return 0;
+}
