@@ -1,0 +1,1 @@
+# Text-analyszer-Vowel-spaces-consonents-
